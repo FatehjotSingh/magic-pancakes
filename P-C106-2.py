@@ -4,7 +4,7 @@ import pandas as pd
 import csv
 
 def plot():
-    fil= open('csvs/4.csv')
+    fil= open('4.csv')
     reader=csv.DictReader(fil)   
     chart= py.scatter(reader,x='Days',y='Marks',size_max=50,title='Attendance-Percentage ratio')
     chart.show()
