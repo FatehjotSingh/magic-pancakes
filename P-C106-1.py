@@ -4,7 +4,7 @@ import pandas as pd
 import csv
 
 def plot():
-    fil= open('csvs/3.csv')
+    fil= open('3.csv')
     reader=csv.DictReader(fil)   
     chart= py.scatter(reader,x='Coffee',y='sleep',size_max=50,title='Sleep-Coffee')
     chart.show()
